@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="dist2/css/pure_player.css">
+	<title>Option Two</title>
+</head>
+<body>
+		<video poster="dist/img/camaleonImg.jpg" class="my-player" src="video/camaleon.mp4" ></video>
+		<div class="my-player2"></div>
+		<h3><a href="index.html">Volver</a></h3>
+
+
+	<script src="dist2/js/pure_player.min.js"></script>>
+	<script type="text/javascript">
+	document.querySelector('.my-player').purePlayer({'autoplay': true});
+
+	var player = document.querySelector('.my-player2').purePlayer({
+		format: 'video/mp4',
+		video: { 
+			// '720': {
+			// 	'src': 'video/camaleon.mp4'
+			// },
+			// '480': {
+			// 	'src': 'video/camaleon.mp4'
+			// },
+			// '360': {
+			// 	'src': 'video/camaleon.mp4'
+			// },
+			'240': {
+				'src': 'video/camaleon.mp4'
+			}
+		}
+	});
+	</script>
+</body>
+</html>
